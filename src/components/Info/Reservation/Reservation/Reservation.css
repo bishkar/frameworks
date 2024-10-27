@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.option-border {
+  @apply border border-solid border-white w-full sm:p-0 p-2;
+}

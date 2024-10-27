@@ -1,23 +1,7 @@
-/// <reference types="vitest" />
-
-import { defineConfig } from 'vite';
-import analog from '@analogjs/platform';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  build: {
-    target: ['es2020'],
-  },
-  resolve: {
-    mainFields: ['module'],
-  },
-  plugins: [
-    analog({
-      ssr: false,
-      static: true,
-      prerender: {
-        routes: [],
-      },
-    }),
-  ],
-}));
+export default defineConfig({
+  plugins: [react()],
+})

@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .rect {
+    @apply rounded-t-extra md:w-4/12 w-screen bg-black-90;
+  }
+}
