@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 670px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.605);
+  border: 1px solid #8400ff;
+}
+
+hr {
+  border: 1px solid #8400ff;
+  margin: 0;
+}

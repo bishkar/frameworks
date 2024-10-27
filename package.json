@@ -1,49 +1,28 @@
 {
-  "name": "todoist",
+  "name": "fractals",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
-  "engines": {
-    "node": ">=18.19.1"
-  },
   "scripts": {
-    "ng": "ng",
-    "dev": "ng serve",
-    "start": "npm run dev",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "private": true,
   "dependencies": {
-    "@analogjs/content": "^1.9.0",
-    "@analogjs/router": "^1.9.0",
-    "@angular/animations": "^18.0.0",
-    "@angular/build": "^18.0.0",
-    "@angular/common": "^18.0.0",
-    "@angular/compiler": "^18.0.0",
-    "@angular/core": "^18.0.0",
-    "@angular/forms": "^18.0.0",
-    "@angular/platform-browser": "^18.0.0",
-    "@angular/platform-browser-dynamic": "^18.0.0",
-    "@angular/platform-server": "^18.0.0",
-    "@angular/router": "^18.0.0",
-    "front-matter": "^4.0.2",
-    "marked": "^5.0.2",
-    "marked-gfm-heading-id": "^3.1.0",
-    "marked-highlight": "^2.0.1",
-    "marked-mangle": "^1.1.7",
-    "prismjs": "^1.29.0",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.14.3"
+    "classnames": "^2.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "@analogjs/platform": "^1.9.0",
-    "@analogjs/vite-plugin-angular": "^1.9.0",
-    "@analogjs/vitest-angular": "^1.9.0",
-    "@angular/cli": "^18.0.0",
-    "@angular/compiler-cli": "^18.0.0",
-    "typescript": "~5.4.2",
-    "vite": "^5.0.0"
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
   }
 }
