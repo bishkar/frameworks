@@ -1,0 +1,13 @@
+import { Component } from '@angular/core';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import '@angular/compiler';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [TodoListComponent],
+  template: `
+    <app-todo-list></app-todo-list>
+  `,
+})
+export class AppComponent {}
